@@ -1,0 +1,48 @@
+#topo #logo #imgLogo > img {
+    border-radius: 60px;
+    border: 1px salmon solid;
+}
+
+#logo {
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+#imgLogo {
+    margin-left: 25%;
+}
+
+#nomeLogo {
+    text-align: center;
+}
+
+#topo {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+#topo-busca {
+    display: flex;        
+}
+
+#topo-busca > div{
+    display: flex;
+    margin: auto;
+}
+
+#topo-busca > div > label {
+    padding: 1%;
+}
+
+#inputBusca {
+    width: 450px;
+}
+
+#topo-icons {
+    display: flex;    
+}
+
+#topo-icons > div {
+    margin: auto;
+    margin-right: 20%;    
+}
