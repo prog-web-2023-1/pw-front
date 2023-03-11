@@ -1,4 +1,4 @@
-#topo #logo #imgLogo > img {
+#topo #logo #imgLogo > img { 
     border-radius: 60px;
     border: 1px salmon solid;
 }
