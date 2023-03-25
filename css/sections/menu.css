@@ -1,0 +1,8 @@
+.mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+}
+
+.mobile-menu--active {
+    transform: translateX(0%);
+}

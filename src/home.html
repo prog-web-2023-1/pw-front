@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="../css/main.css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://kit.fontawesome.com/76276bc273.js" crossorigin="anonymous"></script>
-        <title>PurrFect Play - Principal</title>
+        <!-- Our Scripts -->
+				<script src="../scripts/main.js" type="module"> </script>
+				<title>PurrFect Play - Principal</title>
     </head>
     
 <body>
@@ -46,7 +48,7 @@
 										</a>
 								</div>
 								
-								<div class="d-md-none">
+								<div id="menu__btn" class="d-md-none">
 									<i class="fa-solid fa-bars text-[30px]"></i>
 								</div>
 						</div>       
@@ -55,10 +57,25 @@
 			</div>
     </div>
   </header> 
-  
-  <div class="">
 
-  </div>
+	<div id="mobile-menu" class="mobile-menu container-fluid d-md-none fixed h-full top-0 bg-white">
+		<div class="row">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-9">
+						<div>
+							<h2>Produtos</h2>
+						</div>
+					</div>
+			
+					<div class="col-2">
+						<i class="fa-solid fa-x"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 </body>
 </html>
