@@ -57,7 +57,7 @@ img {
 #topo #topo-body #icon-user {
     display: flex;
     justify-content: center;
-    width: 60px;
+    width: 55px;
     margin: auto;
 }
 
@@ -72,7 +72,7 @@ img {
     #topo #topo-body #icon-user {
         display: flex;
         justify-content: center;
-        width: 40px;
+        width: 50px;
         margin: auto;
     }
 
