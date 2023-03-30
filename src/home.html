@@ -1,51 +1,53 @@
-<!DOCTYPE> 
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../../ProjetoPurrFectPlay/css/home.css" />
+        <!-- <link rel="stylesheet" href="../css/home.css" /> -->
+        <link rel="stylesheet" href="../css/main.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/76276bc273.js" crossorigin="anonymous"></script>
         <title>PurrFect Play - Principal</title>
     </head>
+    
     <body>
-        <div class="col-md-12" id="topo">
-          <div class="col-md-2" id="logo">
-            <div  id="imgLogo"> 
-              <img src="../../../img/logo.png" alt="logo" width="120" height="120" /> 
+      <header class="col-md-12" id="topo">
+        <div class="container">
+            <div class="col-md-12" id="topo-body">
+                <div class="col-md-3 col-sm-auto" id="logo">
+                    <div  id="imgLogo"> 
+                        <img src="../img/logo.png" alt="logo" /> 
+                    </div>
+                    <div  id="nomeLogo">PurrFect Play</div>
+                </div>
+                <div class="col-md-6 col-sm-auto" id="topo-busca">
+                    <div id="campoBusca">
+                        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                        <button id="btnBusca">Buscar</button>
+                    </div>            
+                </div>
+                <div class="col-md-3 col-sm-auto" id="topo-icons">
+                    <div id="icons">
+                        <div id="icon-user">
+                            <a href="">
+                                <img src="../img/icon-user.png" alt="login"  />
+                            </a>
+                        </div> 
+                        <div id="icon-carrinho">
+                            <a href="">
+                                <img src="../img/icon-carrinho.png" alt="carrinho" />
+                            </a>
+                        </div>    
+                    </div>       
+                </div>
             </div>
-            <div  id="nomeLogo">PurrFect Play</div>
-          </div>
-          <div class="col-md-8" id="topo-busca">
-            <div>
-              <label for="inputBusca">Buscar: </label>
-              <input type="text" id="inputBusca" class="form form-control" name="inputBusca" />
-            </div>            
-          </div>
-          <div class="col-md-2" id="topo-icons">
-            <div>
-              <img src="../../../img/icon-user.png" alt="logo" width="60" />
-            </div> 
-            <div>
-              <img src="../../../img/icon-carrinho.png" alt="logo" width="90" />
-            </div>           
-          </div>
         </div>
-        <div>
-          <nav class="navbar navbar-expand-sm bg-light">            
-            <div class="container-fluid">                            
-              <ul class="navbar-nav">
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Link 1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link 2</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link 3</a>
-                </li> -->
-              </ul>             
-            </div>          
-        </nav>
-        </div>               
+      </header> 
+      
+      <div class="test">
+        Test
+      </div>
     </body>
 </html>
