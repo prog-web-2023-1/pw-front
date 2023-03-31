@@ -1,3 +1,12 @@
-#comprar {
-    background-color: #ffc1d5;
+
+
+.btngeral {
+    /* background-color: #ffc1d5 !important; */
+    color: #ffc1d5 !important;
+    border-color: #ff5289 !important;
 }
+
+/* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
