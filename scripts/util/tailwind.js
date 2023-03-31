@@ -3,9 +3,13 @@ function init() {
     theme: {
       extend: {
         colors: {
-          clifford: '#da373d',
+          'main-pink': '#ffc1d5',
           'rose-ebony': '#7C5050ff',
-        }
+          'caput-mortuum': '#3F2326ff',
+          'pale-dogwood': '#D3B4ABff',
+          'rosy-brown': '#C19589ff',
+          'tea-rose-red': '#F1B8B6ff',
+        },
       }
     }
   }
