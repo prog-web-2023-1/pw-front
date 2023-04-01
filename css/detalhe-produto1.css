@@ -1,9 +1,33 @@
 
 
 .btngeral {
-    /* background-color: #ffc1d5 !important; */
-    color: #ffc1d5 !important;
+
+    color:#ff5289 !important;
     border-color: #ff5289 !important;
+    font-weight: bold;
+
+    
+    
+}
+.btngeral:hover{
+    background-color: #ff5289 !important;
+    color:black !important;
+    font-weight: bold;
+
+}
+
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cardImagem{
+
+    display: flex;
+    justify-content: center;
 }
 
 /* display: flex; */
