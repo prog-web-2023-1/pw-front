@@ -1,0 +1,85 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.nav-top {
+    height: 63px;
+    background-color: white !important;
+    border-top: 0.5px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-container {
+    padding-left: 25% !important;
+    padding-right: 25% !important;
+}
+
+.form-control {
+    border-radius: 15rem !important;
+    padding: 0% !important;
+    background-color: #fafafa !important;
+    text-align: center;
+    font-size: 15px !important;
+}
+
+.img-nav {
+    border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-radius: 100%;
+    max-width: 30 px;
+    max-height: 25px;
+}
+
+.icons {
+    padding: 4%;
+    font-size: 25px;
+}
+
+.centro {
+    padding: 4%;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 20rem;
+}
+
+.btnStyle {
+    /* background-color: #ff5289 !important; */
+    background-color: aliceblue !important;
+    color: black !important;
+    font-weight: bold;
+
+}
+
+/* 
+border: none;
+    border-bottom: 1px solid black; */
+
+
+.menuEscolha{
+
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
