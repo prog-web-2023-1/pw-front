@@ -2,17 +2,17 @@
 
 .btngeral {
 
-    color:#ff5289 !important;
-    border-color: #ff5289 !important;
+    color:#f74780 !important;
+    border-color: #f74780 !important;
     font-weight: bold;
-
-    
+    font-size:larger;
     
 }
 .btngeral:hover{
-    background-color: #ff5289 !important;
+    background-color: #f74780 !important;
     color:black !important;
     font-weight: bold;
+    
 
 }
 
@@ -21,6 +21,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: monospace;
+
+}
+
+
+.valores{
+    font-family: monospace;
+    border-left: thick double #f74780 ;
+    padding-left: 5%;
+ 
+
+}
+
+
+.valores .preco{
+    font-weight: bold;
 
 }
 
@@ -30,7 +46,16 @@
     justify-content: center;
 }
 
-/* display: flex; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
+.descricao{
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.descricao .titulo{
+    border-top: thick double #f74780;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
