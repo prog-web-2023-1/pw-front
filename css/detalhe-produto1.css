@@ -30,6 +30,7 @@
     font-family: monospace;
     border-left: thick double #f74780 ;
     padding-left: 5%;
+    padding-right: 5%;
  
 
 }
@@ -48,6 +49,7 @@
 
 .descricao{
     padding-left: 5%;
+    padding-right: 4%;
     font-family: Arial, Helvetica, sans-serif;
     
 
