@@ -15,6 +15,7 @@ body{
     background: #ffff;
 
 }
+
 .container{
     margin-top: 6%;
     width: 40%;
@@ -22,6 +23,7 @@ body{
     display: flex;
     box-shadow: 10px 10px 15px rgba(0, 0,0, .212);
 }
+
 .form {
     width: 100%;        
     display: flex;
@@ -120,4 +122,4 @@ body{
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
-}   
+}  
