@@ -1,0 +1,66 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    color: #f74780;
+    padding-bottom: 5%;
+}
+
+.escolha{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;     
+}
+
+.promo{
+    border:solid 2px #f74780 !important;
+    background-color: #faeef1 !important;
+    color: black !important; 
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 20rem;
+    border:solid 1px #ffc1d5!important;
+}
+
+.iconHeart{
+    color: #f74780;
+    justify-content: center;   
+}
+
+.tituloGeral{
+    font-size: 18px !important;
+    font-weight: bold !important;   
+}
+
+.preco{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #f74780;
+}
+
+
+.btncompra {
+    background-color: transparent !important; 
+    color: #f74780 !important;
+    border:solid 2px #f74780 !important;
+    font-weight: bold !important;            
+}
