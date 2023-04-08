@@ -26,32 +26,39 @@
     margin-left: auto;
 }
 
-#corpo #cardsBloco {
+#corpo .cardsBloco {
     margin-top: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-#corpo #cardsBloco .divCardItens{
+#corpo .cardsBloco .divCardItens{
     margin: 1%; 
 }
 
-#corpo #cardsBloco .cardItens {
-    /* background-color: #faeef1 !important; */
+#corpo .cardsBloco .cardItens {
     border-color: #f74780 !important;
+    padding-bottom: 90px;
+    height: 490px;
 }
 
-#corpo #cardsBloco .cardItens > img {
+#corpo .cardsBloco .cardItens > img {
     border-radius: inherit;
 }
 
-#corpo #cardsBloco .cardItens .btnCompra {
+#corpo .cardsBloco .cardItens .preco {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+
+#corpo .cardsBloco .cardItens .preco .btnCompra {
     border-color: #f74780 !important;
     color: #f74780;
     font-weight: bolder;
 }
 
-#corpo #cardsBloco .cardItens .btnCompra:hover {
+#corpo .cardsBloco .cardItens .btnCompra:hover {
     background-color: #f74780 !important;
     color: white;
     font-weight: bolder;
@@ -59,4 +66,16 @@
 
 .footer {
     background-color: #ffc1d5;
+}
+
+@media screen and (max-width: 720px) {
+    #corpo .cardsBloco .cardItens {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #corpo .cardsBloco .cardItens {
+        height: 350px;
+    }
 }
