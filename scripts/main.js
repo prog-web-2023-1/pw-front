@@ -3,7 +3,7 @@ import tailwind from "./util/tailwind.js";
 
 (function () {
   //call functions from modules imported
-  menu.init();
+  //menu.init();
   tailwind.init();
 
 })();

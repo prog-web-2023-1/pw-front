@@ -3,7 +3,6 @@ import { slideDown, slideUp } from '../util/toggle.js';
 function init() {
 
 	if(window.matchMedia("(max-width: 766px)")) {
-		console.log('menu max-w');
 		let mobileMenuBtn = document.getElementById('menu__btn');
 		let mobileMenu = document.getElementById('mobile-menu');
 		let mobileMenuClose = document.getElementById('mobile-menu__close-btn');
