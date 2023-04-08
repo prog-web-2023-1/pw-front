@@ -82,4 +82,8 @@ img {
         width: 80px;
         margin: auto;
     }
+
+    #topo #topo-body #logo {
+        width: 120px;
+    }
   }
