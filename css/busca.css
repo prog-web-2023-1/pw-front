@@ -1,66 +1,116 @@
-.body {
+/* .body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+} */
+
+.escolha{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    /* text-align: center;      */
 }
 
+.escolha .btnEscolha {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    /* justify-content: center; */
+}
+
+.escolha .btnEscolha .promo{
+    border:solid 2px #f74780 !important;
+    background-color: #faeef1 !important;
+    color: black !important; 
+    width: 200px;
+}
 
 .resultado{
     display: flex;
     justify-content: center;
-    color: #f74780;
-    padding-bottom: 5%;
-}
-
-.escolha{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    justify-content: center;
+    /* color: #f74780; */
     align-items: center;
-    text-align: center;     
+    /* padding-bottom: 5%; */
 }
 
-.promo{
-    border:solid 2px #f74780 !important;
-    background-color: #faeef1 !important;
-    color: black !important; 
+.resultado > h2 > b{
+    /* color: #f74780 !important; */
+    text-decoration: underline #f74780;
 }
 
-#menu {
+.menu {
+    margin-top: 1%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
-
-.card {
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
+.menu .card{
+    margin: 1%; 
+    border:solid 1px #f74780 !important;
     width: 20rem;
-    border:solid 1px #ffc1d5!important;
+    padding-bottom: 90px;
 }
 
-.iconHeart{
+/* .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+/* .menu .card {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: 2%; */
+    /* justify-content: space-around; */
+    /* width: 20rem; */
+    /* border:solid 1px #f74780 !important; 
+} */
+
+.menu .card .iconHeart{
     color: #f74780;
-    justify-content: center;   
+    /* justify-content: center;    */
 }
 
-.tituloGeral{
+.menu .card .tituloGeral{
     font-size: 18px !important;
-    font-weight: bold !important;   
+    /* font-weight: bold !important;    */
 }
 
-.preco{
+/* .menu .card .preco{
     font-size: 15px !important;
-    font-weight: bold !important;
-    color: #f74780;
+    /* font-weight: bold !important; */
+    /* color: #f74780;
+} */
+
+.menu .card .preco {
+    position: absolute;
+    /* left: 5%; */
+    bottom: 20px;
+    width: 90%;
 }
 
 
-.btncompra {
-    background-color: transparent !important; 
-    color: #f74780 !important;
-    border:solid 2px #f74780 !important;
-    font-weight: bold !important;            
+.menu .card .preco .btncompra {
+    border-color: #f74780 !important;
+    color: #f74780;
+    font-weight: bolder;           
+}
+
+.menu .card .preco .btncompra:hover {
+    background-color: #f74780 !important;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: #ffc1d5;
+}
+
+@media screen and (min-width: 700px) {
+    .escolha .btnEscolha .promo{
+        width: 150px;
+    }
 }

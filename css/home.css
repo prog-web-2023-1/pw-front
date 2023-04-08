@@ -1,0 +1,62 @@
+@import url("./sections/menu.css");
+
+#corpo #corpo-body {
+    display: flex;
+    justify-content: center;
+}
+
+#corpo .nomeCate{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+#corpo .nomeCate h1:before{
+    content: '';
+    display: block;
+    width: 75px;
+    border-top: thick solid #f74780 ;
+}
+
+#corpo .nomeCate h1::after{
+    content: '';
+    display: block;
+    width: 75px;
+    border-bottom: thick solid #f74780 ;
+    margin-left: auto;
+}
+
+#corpo #cardsBloco {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#corpo #cardsBloco .divCardItens{
+    margin: 1%; 
+}
+
+#corpo #cardsBloco .cardItens {
+    /* background-color: #faeef1 !important; */
+    border-color: #f74780 !important;
+}
+
+#corpo #cardsBloco .cardItens > img {
+    border-radius: inherit;
+}
+
+#corpo #cardsBloco .cardItens .btnCompra {
+    border-color: #f74780 !important;
+    color: #f74780;
+    font-weight: bolder;
+}
+
+#corpo #cardsBloco .cardItens .btnCompra:hover {
+    background-color: #f74780 !important;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: #ffc1d5;
+}
