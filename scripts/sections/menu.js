@@ -1,20 +1,24 @@
 import { slideDown, slideUp } from '../util/toggle.js';
 
 function init() {
-	console.log('menu');
-	let mobileMenuBtn = document.getElementById('menu__btn');
-	let mobileMenu = document.getElementById('mobile-menu');
-	let mobileMenuClose = document.getElementById('mobile-menu__close-btn');
 
-	mobileMenuBtn.addEventListener('click', function() {
-			mobileMenu.classList.add('mobile-menu--active');
-	});
+	if(window.matchMedia("(max-width: 766px)")) {
+		console.log('menu max-w');
+		let mobileMenuBtn = document.getElementById('menu__btn');
+		let mobileMenu = document.getElementById('mobile-menu');
+		let mobileMenuClose = document.getElementById('mobile-menu__close-btn');
+	
+		mobileMenuBtn.addEventListener('click', function() {
+				mobileMenu.classList.add('mobile-menu--active');
+		});
+	
+		mobileMenuClose.addEventListener('click', function() {
+				mobileMenu.classList.remove('mobile-menu--active');
+		});
+	
+		dropdownsBehavior();
+	}
 
-	mobileMenuClose.addEventListener('click', function() {
-			mobileMenu.classList.remove('mobile-menu--active');
-	});
-
-	dropdownsBehavior();
 }
 
 function dropdownsBehavior() {
