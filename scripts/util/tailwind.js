@@ -4,6 +4,7 @@ function init() {
       extend: {
         colors: {
           'main-pink': '#ffc1d5',
+          'main-pink-translucid': '#ffc1d58a',
           'heavy-pink': '#f74780',
           'rose-ebony': '#7C5050ff',
           'caput-mortuum': '#3F2326ff',

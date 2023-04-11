@@ -1,3 +1,27 @@
 .product__qtd__value {
     border: 1px solid var(--heavy-pink); 
 }
+
+.product-frete {
+    border: 1px solid var(--heavy-pink); 
+    border-radius: 50px;
+}
+
+.product-frete__btn {
+    border-radius: 50px;
+    border: 1px solid var(--heavy-pink);
+}
+
+.product-finish {
+    padding: 10px 20px;
+}
+
+.product-finish--light {
+    border: 1px solid var(--heavy-pink);
+    color: var(--heavy-pink);
+}
+
+.product-finish--pink {
+    background-color: var(--heavy-pink);
+    color: white;
+}
