@@ -21,6 +21,9 @@ a{
     text-align: center;
     font-weight: bold;
 }
+a:hover{
+    color: #f74780;
+}
 /* ESTILIZAÇÃO DA FAIXA ROSA */
 header {
 	display: block;
