@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -14,23 +13,36 @@ body{
     align-items: center;
 	flex-direction: column; /* ESSE FLEX-DIRECTION: COLUMN FAZ OS ITENS DO BODY FICAREM UM EM BAIXO DO OUTRO */	
     background: #ffff;
-
 }
-
+.logo{
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80%;
+    width: 130px;
+    background-color: #ffc1d5;
+    
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
 .container{
-    margin-top: 6%;
+    margin-top: auto;
     width: 40%;
-    height: 75%;
+    height: 70%;
     display: flex;
     box-shadow: 10px 10px 15px rgba(0, 0,0, .212);
+    margin-bottom: auto;
 }
 
 /* ESTILIZAÇÃO DA FAIXA ROSA */
 header {
 	display: block;
-	background-color: #f74780;
+	background-color: #ffc1d5;
 	width: 100%;
-	height: 90px;
+	height: 120px;
+    margin-bottom: 15px;
 }
 
 .form {
@@ -43,7 +55,7 @@ header {
     padding: 3rem;
 }
 .form-header{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     display:flex;
     justify-content: space-between;
 }
@@ -54,16 +66,14 @@ header {
 }
 .login-button button{
     border: none;
-    background-color: #f74780;
+    background-color: #ffc1d5;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor:poiinter;
 }
 .login-button button:hover{
     
-    background-color: black;
-   
-
+    background-color: #f74780;
 }
 .login-button button a{
     text-decoration: none;
@@ -75,7 +85,7 @@ header {
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #f74780;
+    background-color: #ffc1d5;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -103,7 +113,7 @@ header {
 
 }
 .input-box input:focus-visible{
-    outline: 2px solid #f74780;
+    outline: 2px solid #ffc1d5;
 }
 .input-box label{
     font-size: 0.75 rem;
@@ -117,14 +127,14 @@ header {
     width: 100%;
     margin-bottom: 1.5rem;
     border: none;
-    background-color: #f74780;
+    background-color: #ffc1d5;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .continue-button button:hover{
-    background-color: black;
+    background-color: #f74780;
 }
 .continue-button button a {
     text-decoration: none;
