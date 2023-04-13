@@ -1,27 +1,38 @@
 .product__qtd__value {
-    border: 1px solid var(--heavy-pink); 
+  border: 1px solid var(--heavy-pink); 
 }
 
 .product-frete {
-    border: 1px solid var(--heavy-pink); 
-    border-radius: 50px;
+  border: 1px solid var(--heavy-pink); 
+  border-radius: 50px;
 }
 
 .product-frete__btn {
-    border-radius: 50px;
-    border: 1px solid var(--heavy-pink);
+  border-radius: 50px;
+  border: 1px solid var(--heavy-pink);
 }
 
 .product-finish {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .product-finish--light {
-    border: 1px solid var(--heavy-pink);
-    color: var(--heavy-pink);
+  border: 1px solid var(--heavy-pink);
+  color: var(--heavy-pink);
 }
 
 .product-finish--pink {
-    background-color: var(--heavy-pink);
-    color: white;
+  background-color: var(--heavy-pink);
+  color: white;
+}
+
+@media screen and (min-width: 1024px ) {
+  .product-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  }
+
+  .product-legend {
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  }
 }

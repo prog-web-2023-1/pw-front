@@ -20,11 +20,23 @@
       <div class="row">
         <div class="col-12 mb-7">
           <h2 class="lato my-5 text-[22px] text-heavy-pink">Carrinho <i class="fa-solid fa-cart-shopping"></i></h2>
-          <div>
-            <p>Img</p>
-            <p>Título</p>
+          
+          <div class="hidden lg:grid product-legend bg-main-pink-translucid py-2 font-bold g-0"> 
+            <h3 class="">Produto</h3>
+            <h3>Preço unitário</h3>
+            <h3>Quantidade</h3>
+            <h3>Subtotal</h3>
+            <h3>Excluir</h3>
+          </div>
 
-            <div class="product__qtd flex items-center justify-center gap-x-4">
+          <div class="product-wrapper mt-[10px]">
+            <div>
+              <p>Img</p>
+              <p>Título</p>
+            </div>
+
+
+            <div class="product__qtd flex items-center justify-center lg:justify-start gap-x-4">
               <i class="fa-solid fa-minus text-heavy-pink cursor-pointer font-bold text-[21px]"></i>
               <div class="product__qtd__value rounded-[50px] w-[60px]">
                 <input type="text" name="qtd" value="1"
@@ -33,23 +45,33 @@
               <i class="fa-solid fa-plus text-heavy-pink cursor-pointer font-bold"></i>
             </div>
 
-            <div class="flex flex-col items-center gap-y-5 mt-[20px]">
+            <div class="flex flex-col lg:flex-row items-center gap-y-5 mt-[20px] lg:mt-0">
               <span>R$ 52,20</span>
+              <i class="fa-solid fa-trash text-heavy-pink cursor-pointer lg:hidden"></i>
+            </div>
+
+            <div class="hidden lg:flex items-center">
+              <p>R$ 30,00</p>
+            </div>
+
+            <div class="hidden lg:flex items-center">
               <i class="fa-solid fa-trash text-heavy-pink cursor-pointer"></i>
             </div>
           </div>          
         </div>
 
-        <div class="col-12 px-2.5 py-8 bg-main-pink-translucid">
-          <span class="font-bold text-[14px]">Calcular o frete: </span>
-          <div class="ml-2 mt-2">
-            <input class="product-frete w-[156px] p-[5px] lato" type="number" name="cep" maxlength="9">
-            <button class="ml-2.5  py-[5px] px-[5px] product-frete__btn bg-main-pink-translucid">Calcular</button>
+        <div class="col-12 px-2.5 py-8 lg:py-0 bg-main-pink-translucid lg:bg-white">
+          <div class="lg:bg-main-pink-translucid lg:py-8 lg:px-[12px]">
+            <span class="font-bold text-[14px]">Calcular o frete: </span>
+            <div class="ml-2 mt-2">
+              <input class="product-frete w-[156px] p-[5px] lato" type="number" name="cep" maxlength="9">
+              <button class="ml-2.5  py-[5px] px-[5px] product-frete__btn bg-main-pink-translucid">Calcular</button>
+            </div>
           </div>
         </div>
 
-        <div class="col-12 mt-[20px] py-8 bg-main-pink-translucid">
-          <div class="text-right lato text-[14px]">
+        <div class="col-12 mt-[20px] lg:mt-0 py-8 lg:py-0 bg-main-pink-translucid lg:bg-white">
+          <div class="text-right lato text-[14px] lg:bg-main-pink-translucid lg:py-8 lg:px-[12px]">
             <p>Total: <span class="text-[22px] font-bold text-heavy-pink">R$ 52,20</span></p>
             <p>via Pix por <span class="font-bold text-heavy-pink">R$ 49,99</span></p>
             <p>ou em até <span class="font-semibold">2x</span> de <span class="font-semibold">R$ 26,10</span> sem juros</p>
@@ -57,7 +79,7 @@
         </div>
 
         <div class="col-12 mt-6 mb-20">
-          <div class="flex flex-col gap-y-[10px] items-center">
+          <div class="flex flex-col lg:flex-row lg:justify-end  lg:gap-x-[10px] gap-y-[10px] items-center">
             <button class="uppercase product-finish product-finish--light"><i class="fa-regular fa-less-than mr-[5px]"></i> Continuar comprando</button>
             <button class="w-full max-w-[259px] text-[18px] uppercase product-finish product-finish--pink"><i class="fa-solid fa-check mr-[5px]"></i> Finalizar Compra</button>
           </div>
