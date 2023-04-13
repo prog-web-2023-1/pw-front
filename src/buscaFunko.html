@@ -5,190 +5,194 @@
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/topo.css">
   <link rel="stylesheet" href="../css/busca.css">
+  <script src="../js/functions.js"></script>
   <title>PurrFect Play - Funko</title>
 </head>
 <body >
-  <!-- Inicio do topo -->
-  <div class="col-md-12" id="topo">
-    <div class="container">
-      <div class="row">          
-        <div class="col-md-12" id="topo-body">
-          <div class="col-md-2 col-sm-auto" id="logo">
-            <img src="../img/logo.png" alt="logo" width="150" />                     
-          </div>
-          <div class="col-md-8 col-sm-auto" id="topo-busca">
-            <div id="campoBusca">
-              <input type="text" id="txtBusca" placeholder="Buscar..."/>
-              <button id="btnBusca">Buscar</button>
-            </div>            
-          </div>
-          <div class="col-md-1 col-sm-auto" id="icon-user">
-            <a href="">
-               <img src="../img/icon-user.png" alt="login" />
-            </a>
-          </div> 
-          <div class="col-md-1 col-sm-auto" id="icon-carrinho">
-            <a href="">
-              <img src="../img/icon-carrinho.png" alt="carrinho" />
-            </a>
+  <div class="inicio">
+    <!-- Inicio do topo -->
+    <div class="col-md-12" id="topo">
+      <div class="container">
+        <div class="row">          
+          <div class="col-md-12" id="topo-body">
+            <div class="col-md-2 col-sm-auto" id="logo">
+              <a href="../src/home.html" onclick="load()">
+                <img src="../img/logo.png" alt="logo" width="150" />        
+              </a>             
+            </div>
+            <div class="col-md-8 col-sm-auto" id="topo-busca">
+              <div id="campoBusca">
+                <input name="txtBusca" id="txtBusca" placeholder="Buscar..." autocomplete="off"/>
+                <button id="btnBusca" onclick="validarBusca()">Buscar</button>
+              </div>            
+            </div>
+            <div class="col-md-1 col-sm-auto" id="icon-user">
+              <a href="" onclick="load()">
+                <img src="../img/icon-user.png" alt="login" />
+              </a>
+            </div> 
+            <div class="col-md-1 col-sm-auto" id="icon-carrinho">
+              <a href="" onclick="load()">
+                <img src="../img/icon-carrinho.png" alt="carrinho" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Fim do topo --> 
+    <!-- Inicio corpo -->
+    <section>
+      <div class="container">
+        <div class="row">        
+          <div class="col-md-12 escolha">
+            <div class="col-md-3 divPromo">             
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>1ª COMPRA</h6></button><!--PROMOS-->
+            </div>
+            <div class="col-md-3 divPromo">             
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>CASH BACK</h6></button>
+            </div>
+            <div class="col-md-3 divPromo">
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>VALE PRESENTE</h6></button>
+            </div>
+            <div class="col-md-3 divPromo">
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>LIQUIDA</h6></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 resultado">
+            <h2>Resultado de Busca: <b>Funko Pop</b></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 menu"> <!--MENU-->
+            <div class="col-md-4 card "> <!--CARDS-->
+              <img src="../img/funko_deadpool.png" class="card-img-top cardproduto" alt="Funko Deadpool #320">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Funko Deadpool #320</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 139,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <!-- <hr style="border: 1px black solid;"> -->
+            <div class="col-md-4 card">
+              <img src="../img/funko_coraline.png" class="card-img-top cardproduto" alt="Funko Coraline #422">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Funko Coraline #422</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 129,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <!-- <hr style="border: 1px black solid;"> -->
+            <div class="col-md-4 card">
+              <img src="../img/funko_cruela.png" class="card-img-top cardproduto" alt="Funko Cruela #1038">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-half iconHeart"></i>
+                <h5 class="card-title tituloGeral">Funko Cruela #1038</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 159,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 menu">
+            <div class="col-md-4 card">
+              <img src="../img/funko_loki.png" class="card-img-top" alt="Funko Loki #898">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Funko Loki #898</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 159,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <!-- <hr style="border: 1px black solid;"> -->
+            <div class="col-md-4 card">
+              <img src="../img/funko_merida.png" class="card-img-top" alt="Funko Merida #324">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Funko Merida #324</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 139,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <!-- <hr style="border: 1px black solid;"> -->
+            <div class="col-md-4 card">
+              <img src="../img/funko_mulher_maravilha.png" class="card-img-top" alt="Funko Mulher Maravilha #172">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Funko Mulher Maravilha #172</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 159,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fim corpo-->
+    <!-- inicio footer -->
+    <div class="col-md-12 border-top align-items-center d-flex footer">
+      <div class="container">
+        <div class="row pb-3 my-2">                  
+          <div class="col-md-12 d-flex justify-content-center">               
+            <ul class="nav flex-row">
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Central do Cliente</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Fale Conosco</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Quem somos</a></li>
+            </ul>    
+          </div>
+          <div class="col-md-12 d-flex justify-content-center nomeEmpresa">
+            <span>© 2023 PurrFect Play.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim footer -->
   </div>
-  <!-- Fim do topo --> 
-  <!-- Inicio corpo -->
-  <section>
-    <div class="container">
-      <div class="row">        
-        <div class="col-md-12 escolha">
-          <div class="btnEscolha">
-            <div class="col-md-3">             
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>1ª COMPRA</h6></button><!--PROMOS-->
-            </div>
-            <div class="col-md-3">             
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>CASH BACK</h6></button>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>VALE PRESENTE</h6></button>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>LIQUIDA</h6></button>
-            </div>
-          </div>          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 resultado">
-          <h2>Resultado de Busca: <b>Funko Pop</b></h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 menu"> <!--MENU-->
-          <div class="col-md-4 card "> <!--CARDS-->
-            <img src="../img/funko_deadpool.png" class="card-img-top cardproduto" alt="Funko Deadpool #320">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Funko Deadpool #320</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 139,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <!-- <hr style="border: 1px black solid;"> -->
-          <div class="col-md-4 card">
-            <img src="../img/funko_coraline.png" class="card-img-top cardproduto" alt="Funko Coraline #422">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Funko Coraline #422</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 129,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <!-- <hr style="border: 1px black solid;"> -->
-          <div class="col-md-4 card">
-            <img src="../img/funko_cruela.png" class="card-img-top cardproduto" alt="Funko Cruela #1038">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-half iconHeart"></i>
-              <h5 class="card-title tituloGeral">Funko Cruela #1038</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 159,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 menu">
-          <div class="col-md-4 card">
-            <img src="../img/funko_loki.png" class="card-img-top" alt="Funko Loki #898">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Funko Loki #898</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 159,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <!-- <hr style="border: 1px black solid;"> -->
-          <div class="col-md-4 card">
-            <img src="../img/funko_merida.png" class="card-img-top" alt="Funko Merida #324">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Funko Merida #324</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 139,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <!-- <hr style="border: 1px black solid;"> -->
-          <div class="col-md-4 card">
-            <img src="../img/funko_mulher_maravilha.png" class="card-img-top" alt="Funko Mulher Maravilha #172">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Funko Mulher Maravilha #172</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 159,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- fim corpo-->
-  <!-- inicio footer -->
-  <div class="col-md-12 border-top align-items-center d-flex footer">
-    <div class="container">
-      <div class="row pb-3 my-2">                  
-        <div class="col-md-12 d-flex justify-content-center">               
-          <ul class="nav flex-row">
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Central do Cliente</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Fale Conosco</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Quem somos</a></li>
-          </ul>    
-        </div>
-        <div class="col-md-12 d-flex justify-content-center nomeEmpresa">
-          <span>© 2023 PurrFect Play.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- fim footer -->
 </body>
 </html>

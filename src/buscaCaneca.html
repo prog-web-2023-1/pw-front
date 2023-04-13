@@ -5,187 +5,191 @@
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/busca.css">
   <link rel="stylesheet" href="../css/topo.css">
+  <script src="../js/functions.js"></script>
   <title>PurrFect Play - Caneca</title>
 </head>
 <body >
-  <!-- Inicio do topo -->
-  <div class="col-md-12" id="topo">
-    <div class="container">
-      <div class="row">          
-        <div class="col-md-12" id="topo-body">
-          <div class="col-md-2 col-sm-auto" id="logo">
-            <img src="../img/logo.png" alt="logo" width="150" />                     
-          </div>
-          <div class="col-md-8 col-sm-auto" id="topo-busca">
-            <div id="campoBusca">
-              <input type="text" id="txtBusca" placeholder="Buscar..."/>
-              <button id="btnBusca">Buscar</button>
-            </div>            
-          </div>
-          <div class="col-md-1 col-sm-auto" id="icon-user">
-            <a href="">
-               <img src="../img/icon-user.png" alt="login" />
-            </a>
-          </div> 
-          <div class="col-md-1 col-sm-auto" id="icon-carrinho">
-            <a href="">
-              <img src="../img/icon-carrinho.png" alt="carrinho" />
-            </a>
+  <div class="inicio">
+    <!-- Inicio do topo -->
+    <div class="col-md-12" id="topo">
+      <div class="container">
+        <div class="row">          
+          <div class="col-md-12" id="topo-body">
+            <div class="col-md-2 col-sm-auto" id="logo">
+              <a href="../src/home.html" onclick="load()">
+                <img src="../img/logo.png" alt="logo" width="150" />        
+              </a>             
+            </div>
+            <div class="col-md-8 col-sm-auto" id="topo-busca">
+              <div id="campoBusca">
+                <input name="txtBusca" id="txtBusca" placeholder="Buscar..." autocomplete="off"/>
+                <button id="btnBusca" onclick="validarBusca()">Buscar</button>
+              </div>            
+            </div>
+            <div class="col-md-1 col-sm-auto" id="icon-user">
+              <a href="" onclick="load()">
+                <img src="../img/icon-user.png" alt="login" />
+              </a>
+            </div> 
+            <div class="col-md-1 col-sm-auto" id="icon-carrinho">
+              <a href="" onclick="load()">
+                <img src="../img/icon-carrinho.png" alt="carrinho" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div> 
-  <!-- Fim do topo --> 
-  <!-- Inicio Corpo -->
-  <section>
-    <div class="container">
-      <div class="row">        
-        <div class="col-md-12 escolha">
-          <div class="btnEscolha">
-            <div class="col-md-3">             
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>1ª COMPRA</h6></button><!--PROMOS-->
+    <!-- Fim do topo --> 
+    <!-- Inicio Corpo -->
+    <section>
+      <div class="container">
+        <div class="row">        
+          <div class="col-md-12 escolha">
+            <div class="col-md-3 divPromo">             
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>1ª COMPRA</h6></button><!--PROMOS-->
             </div>
-            <div class="col-md-3">             
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>CASH BACK</h6></button>
+            <div class="col-md-3 divPromo">             
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>CASH BACK</h6></button>
             </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>VALE PRESENTE</h6></button>
+            <div class="col-md-3 divPromo">
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>VALE PRESENTE</h6></button>
             </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-primary btn-lg promo"><i class="bi bi-gem"></i><h6>LIQUIDA</h6></button>
+            <div class="col-md-3 divPromo">
+              <button type="button" class="btn btn-primary promo"><i class="bi bi-gem"></i><h6>LIQUIDA</h6></button>
             </div>
-          </div>          
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 resultado">
+            <h2>Resultado de Busca: <b>Canecas</b></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 menu"> <!--MENU-->
+            <div class="col-md-4 card "> <!--CARDS-->
+              <img src="../img/caneca_baby_yoda.png" class="card-img-top cardproduto" alt="Caneca Baby Yoda">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Caneca Baby Yoda</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 59,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>          
+            <div class="col-md-4 card">
+              <img src="../img/caneca_superman.png" class="card-img-top cardproduto" alt="Caneca Superman">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Caneca Superman</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 59,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 card">
+              <img src="../img/caneca_chihiro.png" class="card-img-top cardproduto" alt="Caneca a Viagem de Chihiro">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-half iconHeart"></i>
+                <h5 class="card-title tituloGeral">Caneca A Viagem de Chihiro</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 59,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 menu">
+            <div class="col-md-4 card">
+              <img src="../img/caneca_dumbo.png" class="card-img-top" alt="Caneca Dumbo">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Caneca Dumbo</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 59,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 card">
+              <img src="../img/caneca_captao_marvel.png" class="card-img-top" alt="Caneca Capitã Marvel">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Caneca Capitã Marvel</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 59,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 card">
+              <img src="../img/caneca_sailormoon.png" class="card-img-top" alt="Caneca Sailor Moon">
+              <div class="card-body">
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <i class="bi bi-heart-fill iconHeart"></i>
+                <h5 class="card-title tituloGeral">Caneca Sailor Moon</h5>
+                <div class="preco">
+                  <p class="card-text">Por <b>R$ 59,90</b></p>
+                  <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 resultado">
-          <h2>Resultado de Busca: <b>Canecas</b></h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 menu"> <!--MENU-->
-          <div class="col-md-4 card "> <!--CARDS-->
-            <img src="../img/caneca_baby_yoda.png" class="card-img-top cardproduto" alt="Caneca Baby Yoda">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Caneca Baby Yoda</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 59,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>          
-          <div class="col-md-4 card">
-            <img src="../img/caneca_superman.png" class="card-img-top cardproduto" alt="Caneca Superman">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Caneca Superman</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 59,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
+    </section>
+    <!-- fim corpo-->
+    <!-- inicio footer -->
+    <div class="col-md-12 border-top align-items-center d-flex footer">
+      <div class="container">
+        <div class="row pb-3 my-2">                  
+          <div class="col-md-12 d-flex justify-content-center">               
+            <ul class="nav flex-row">
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Central do Cliente</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Fale Conosco</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Quem somos</a></li>
+            </ul>    
           </div>
-          <div class="col-md-4 card">
-            <img src="../img/caneca_chihiro.png" class="card-img-top cardproduto" alt="Caneca a Viagem de Chihiro">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-half iconHeart"></i>
-              <h5 class="card-title tituloGeral">Caneca A Viagem de Chihiro</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 59,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
+          <div class="col-md-12 d-flex justify-content-center nomeEmpresa">
+            <span>© 2023 PurrFect Play.</span>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 menu">
-          <div class="col-md-4 card">
-            <img src="../img/caneca_dumbo.png" class="card-img-top" alt="Caneca Dumbo">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Caneca Dumbo</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 59,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 card">
-            <img src="../img/caneca_captao_marvel.png" class="card-img-top" alt="Caneca Capitã Marvel">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Caneca Capitã Marvel</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 59,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 card">
-            <img src="../img/caneca_sailormoon.png" class="card-img-top" alt="Caneca Sailor Moon">
-            <div class="card-body">
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <i class="bi bi-heart-fill iconHeart"></i>
-              <h5 class="card-title tituloGeral">Caneca Sailor Moon</h5>
-              <div class="preco">
-                <p class="card-text">Por <b>R$ 59,90</b></p>
-                <a href="#" class="btn btn-outline-success btncompra">Comprar</a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- fim corpo-->
-  <!-- inicio footer -->
-  <div class="col-md-12 border-top align-items-center d-flex footer">
-    <div class="container">
-      <div class="row pb-3 my-2">                  
-        <div class="col-md-12 d-flex justify-content-center">               
-          <ul class="nav flex-row">
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Central do Cliente</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Fale Conosco</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark">Quem somos</a></li>
-          </ul>    
-        </div>
-        <div class="col-md-12 d-flex justify-content-center nomeEmpresa">
-          <span>© 2023 PurrFect Play.</span>
         </div>
       </div>
     </div>
+    <!-- fim footer -->
   </div>
-  <!-- fim footer -->
 </body>
 </html>

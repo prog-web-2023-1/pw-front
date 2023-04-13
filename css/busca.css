@@ -1,27 +1,22 @@
-/* .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .escolha{
     margin-top: 2%;
     margin-bottom: 2%;
-    /* align-items: center; */
     justify-content: center;
     display: flex;
-    /* text-align: center;      */
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.escolha .btnEscolha {
+.escolha .divPromo {
     display: flex;
-    align-items: center;
-    column-gap: 20px;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
-.escolha .btnEscolha .promo{
+.escolha .promo{
     border:solid 2px #f74780 !important;
     background-color: #faeef1 !important;
     color: black !important; 
@@ -31,13 +26,10 @@
 .resultado{
     display: flex;
     justify-content: center;
-    /* color: #f74780; */
     align-items: center;
-    /* padding-bottom: 5%; */
 }
 
 .resultado > h2 > b{
-    /* color: #f74780 !important; */
     text-decoration: underline #f74780;
 }
 
@@ -54,49 +46,27 @@
     padding-bottom: 90px;
 }
 
-/* .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
-
-/* .menu .card {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* margin: 2%; */
-    /* justify-content: space-around; */
-    /* width: 20rem; */
-    /* border:solid 1px #f74780 !important; 
-} */
-
 .menu .card .iconHeart{
     color: #f74780;
-    /* justify-content: center;    */
 }
 
 .menu .card .tituloGeral{
     font-size: 18px !important;
-    /* font-weight: bold !important;    */
 }
-
-/* .menu .card .preco{
-    font-size: 15px !important;
-    /* font-weight: bold !important; */
-    /* color: #f74780;
-} */
 
 .menu .card .preco {
     position: absolute;
-    /* left: 5%; */
+    right: 16px;
+    left: 16px;
     bottom: 20px;
-    width: 90%;
 }
 
 
 .menu .card .preco .btncompra {
     border-color: #f74780 !important;
     color: #f74780;
-    font-weight: bolder;           
+    font-weight: bolder; 
+    width: 100%;          
 }
 
 .menu .card .preco .btncompra:hover {
@@ -109,8 +79,14 @@
     background-color: #ffc1d5;
 }
 
-@media screen and (min-width: 700px) {
-    .escolha .btnEscolha .promo{
-        width: 150px;
+@media screen and (max-width: 720px) {
+    .escolha{
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 10px;
+    }
+
+    .escolha .promo{
+        width: 120px;
     }
 }
