@@ -4,8 +4,7 @@ import cesta from "./views/cesta.js";
 
 (function () {
   //call functions from modules imported
-  //menu.init();
+  menu.init();
   tailwind.init();
   cesta.init();
-
 })();

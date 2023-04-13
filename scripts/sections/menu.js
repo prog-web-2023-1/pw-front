@@ -2,6 +2,10 @@ import { slideDown, slideUp } from '../util/toggle.js';
 
 function init() {
 
+	if(!document.body.classList.contains('has-menu')) {
+		return
+	}
+
 	if(window.matchMedia("(max-width: 766px)")) {
 		let mobileMenuBtn = document.getElementById('menu__btn');
 		let mobileMenu = document.getElementById('mobile-menu');
