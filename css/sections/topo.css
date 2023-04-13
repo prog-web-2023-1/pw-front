@@ -1,0 +1,80 @@
+#topo{
+	background-color: #ffc1d5;
+}
+
+#topo-body {
+	display: flex;
+}
+
+#topo #logo #imgLogo > img { 
+	margin: 1% 2% 0;
+	border-radius: 50%;
+	border: 1px #f74780 solid;
+	width: 100px;
+}
+
+#topo #logo #nomeLogo {
+	align-items: center;
+	margin-left: 7%;
+}
+
+#topo #topo-busca {
+	display: flex;
+}
+
+#topo #topo-busca #campoBusca{
+	background-color:#faeef1;
+	border:solid 2px #f74780 ;
+	border-radius:10px;
+	width: 80%;
+	display: flex;
+	margin: auto;
+}
+
+#topo #topo-busca #campoBusca #txtBusca{
+	float:left;
+	background-color:transparent;
+	padding-left:5px;
+	font-size:18px;
+	border:none;
+	width:100%;
+	height: 40px;
+}
+
+#topo #topo-busca #campoBusca #btnBusca{
+	border:none;
+	float:left;
+	border-radius:0 7px 7px 0;
+	width: auto;
+	font-weight:bold;
+	background:#f74780 ;
+}
+
+#topo #topo-icons {
+	display: flex;
+	align-items: center;
+}
+
+#topo #topo-icons #icons{
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+#topo #topo-icons #icon-user > a > img{
+	width: 60px;
+}
+
+#topo #topo-icons #icon-carrinho > a > img{
+	width: 90px;
+}
+
+@media only screen and (min-width: 768px) {
+	#topo #topo-icons #icon-user > a > img{
+			margin-left: 30%;
+	}
+	
+	#topo #topo-icons #icon-carrinho > a > img{
+			margin-left: 50%;
+	}
+}
