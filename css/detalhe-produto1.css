@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
 .btngeral {
 
@@ -6,6 +6,7 @@
     border-color: #f74780 !important;
     font-weight: bold;
     font-size:larger;
+    width: 80%;
     
 }
 .btngeral:hover{
@@ -17,17 +18,19 @@
 }
 
 
-.teste{
+
+
+.texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: monospace;
+    font-family: 'Inter', sans-serif;
 
 }
 
 
 .valores{
-    font-family: monospace;
+    font-family: 'Inter', sans-serif;
     border-left: thick double #f74780 ;
     padding-left: 5%;
     padding-right: 5%;
@@ -41,10 +44,18 @@
 
 }
 
+.valores .quant:focus-visible{
+    outline: 2px solid #f74780;
+
+
+}
+
+
 .cardImagem{
 
     display: flex;
     justify-content: center;
+    border-color: #f74780 !important;
 }
 
 .descricao{
@@ -60,4 +71,12 @@
     
 
 }
+.texto.valores.quant{
+    width: 20%;
+
+}
+.texto.valores.btngeral{
+    width: 80%;
+}
+
 
