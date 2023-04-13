@@ -46,6 +46,10 @@ body {
     padding-bottom: 90px;
 }
 
+.menu .card > a > img {
+    height: 400px;
+}
+
 .menu .card .iconHeart{
     color: #f74780;
 }
@@ -88,5 +92,29 @@ body {
 
     .escolha .promo{
         width: 120px;
+    }
+
+    .menu .card > a > img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1060px) {
+    .escolha{
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 10px;
+    }
+
+    .escolha .promo{
+        width: 120px;
+    }
+
+    .menu .card > a > img {
+        height: 300px;
+    }
+
+    .menu .card{
+        width: 13rem;
     }
 }
