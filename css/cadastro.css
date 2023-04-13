@@ -20,8 +20,7 @@ body{
     margin-bottom: 10px;
     height: 80%;
     width: 130px;
-    background-color: #ffc1d5;
-    
+    background-color: #ffc1d5;   
 }
 .logo img{
     width: 100%;
@@ -35,7 +34,6 @@ body{
     box-shadow: 10px 10px 15px rgba(0, 0,0, .212);
     margin-bottom: auto;
 }
-
 /* ESTILIZAÇÃO DA FAIXA ROSA */
 header {
 	display: block;
@@ -44,7 +42,6 @@ header {
 	height: 120px;
     margin-bottom: 15px;
 }
-
 .form {
     width: 100%;        
     display: flex;
@@ -58,27 +55,6 @@ header {
     margin-bottom: 1.5rem;
     display:flex;
     justify-content: space-between;
-}
-
-.login-button{
-    display: flex;
-    align-items: center;
-}
-.login-button button{
-    border: none;
-    background-color: #ffc1d5;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor:poiinter;
-}
-.login-button button:hover{
-    
-    background-color: #f74780;
-}
-.login-button button a{
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
 }
 .form-header h1::after{
     content: '';
@@ -142,3 +118,20 @@ header {
     font-weight: 500;
     color: #fff;
 }  
+
+.login-button button{
+    border: none;
+    background-color: #ffc1d5;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor:poiinter;
+}
+.login-button button:hover{
+    
+    background-color: #f74780;
+}
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
