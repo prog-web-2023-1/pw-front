@@ -10,9 +10,13 @@
   <link rel="stylesheet" href="../css/busca.css">
   <link rel="stylesheet" href="../css/topo.css">
   <script src="../js/functions.js"></script>
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/76276bc273.js" crossorigin="anonymous"></script>
+  <script src="../scripts/main.js" type="module"> </script>
   <title>PurrFect Play - Caneca</title>
 </head>
-<body >
+<body class="has-menu">
   <div class="inicio">
     <!-- Inicio do topo -->
     <div class="col-md-12" id="topo">
@@ -31,7 +35,7 @@
               </div>            
             </div>
             <div class="col-md-1 col-sm-auto" id="icon-user">
-              <a href="" onclick="load()">
+              <a href="login.html" onclick="load()">
                 <img src="../img/icon-user.png" alt="login" />
               </a>
             </div> 
@@ -40,11 +44,124 @@
                 <img src="../img/icon-carrinho.png" alt="carrinho" />
               </a>
             </div>
+
+            <div id="menu__btn" class="d-md-none cursor-pointer">
+              <i class="fa-solid fa-bars text-[30px]"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Fim do topo --> 
+
+    <!--Início Menu -->
+    <div id="mobile-menu" class="z-10 mobile-menu container-fluid fixed md:relative h-full top-0">
+      <div class="row h-full">
+        <div class="col-12 h-full">
+          <div class="row h-full">
+            <div class="desktop-menu__menu-wrapper col-9 col-md-12 g-md-0 md:h-[60px] bg-white">
+              <div class="border-b border-rose-ebony">
+                <h2 class="text-rose-ebony lato py-[20px] text-[1.25rem] font-semibold md:hidden">Produtos</h2>
+              </div>
+  
+              <div class="menu-wrapper h-[320px] md:h-auto overflow-auto md:flex md:gap-x-2 md:justify-center">
+                <div class="list md:w-1/5">
+                  <div class="relative list-wrapped">
+                    <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                      <a href="h#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Decoração</a>
+                      <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                    </span>
+    
+                    <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                      <li class="lato">Tapetes</li>
+                      <li class="lato">Funkos</li>
+                      <li class="lato">Quadros</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="list md:w-1/5">
+                  <div class="relative list-wrapped">
+                    <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                      <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Mangás</a>
+                      <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                    </span>
+  
+                    <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                      <li class="lato">Naruto</li>
+                      <li class="lato">Jojo's bizarre adventure</li>
+                      <li class="lato">One Piece</li>
+                      <li class="lato">Hamtaro</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="list md:w-1/5">
+                  <div class="relative list-wrapped">
+                    <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                      <a href="# target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Gamer</a>
+                      <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                    </span>
+  
+                    <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                      <li class="lato">Overwatch</li>
+                      <li class="lato">Dead By Daylight</li>
+                      <li class="lato">Naruto Shippuden Ultimate Ninja Storm 4</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="list md:w-1/5">
+                  <div class="relative list-wrapped">
+                    <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                      <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Vestuário</a>
+                      <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                    </span>
+  
+                    <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                      <li class="lato">Acessórios</li>
+                      <li class="lato">Camisetas</li>
+                      <li class="lato">Bermudas / Calças</li>
+                      <li class="lato">Roupas Íntimas</li>
+                      <li class="lato">Saias</li>
+                      <li class="lato">Tênis</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="list md:w-1/5">
+                  <div class="relative list-wrapped">
+                    <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                      <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Presentes</a>
+                      <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                    </span>
+  
+                    <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                      <li class="lato">Kit blusas</li>
+                      <li class="lato">Kit mangas</li>
+                      <li class="lato">Kit Funkos</li>
+                      <li class="lato">Monte seu Kit</li>
+                    </ul>
+                  </div>
+                </div>
+  
+              </div>
+              
+            </div>
+        
+            <div id="mobile-menu__close-btn" class="col-3 g-0 bg-[#0006] md:hidden">
+              <div class="h-[72px] flex justify-center items-center bg-main-pink">
+                <i class="fa-solid fa-x text-rose-ebony"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+    </div>
+    <!-- Fim Menu -->
+
     <!-- Inicio Corpo -->
     <section>
       <div class="container">
