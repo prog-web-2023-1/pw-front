@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="../css/home.css" /> -->
+    <link rel="stylesheet" href="../css/topo.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/76276bc273.js" crossorigin="anonymous"></script>
+    <!-- Our Scripts -->
+    <script src="../scripts/main.js" type="module"> </script>
+    <title>PurrFect Play - Cesta</title>
+  </head>
+
+
+  <body class="cesta-page has-menu">
+    <!-- Inicio do topo -->
+    <div class="col-md-12" id="topo">
+      <div class="container">
+        <div class="row">          
+          <div class="col-md-12" id="topo-body">
+            <div class="col-md-2 col-sm-auto" id="logo">
+              <img src="../img/logo.png" alt="logo" width="150" />                     
+            </div>
+            <div class="col-md-8 col-sm-auto" id="topo-busca">
+              <div id="campoBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                <button id="btnBusca">Buscar</button>
+              </div>            
+            </div>
+            <div class="col-md-1 col-sm-auto" id="icon-user">
+              <a href="">
+                <img src="../img/icon-user.png" alt="login" />
+              </a>
+            </div> 
+            <div class="col-md-1 col-sm-auto" id="icon-carrinho">
+              <a href="cesta.html">
+                <img src="../img/icon-carrinho.png" alt="carrinho" />
+              </a>
+            </div>
+
+            <div id="menu__btn" class="d-md-none cursor-pointer">
+              <i class="fa-solid fa-bars text-[30px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- Fim do topo --> 
+
+            <!--Início Menu -->
+            <div id="mobile-menu" class="z-10 mobile-menu container-fluid fixed md:relative h-full top-0">
+              <div class="row h-full">
+                <div class="col-12 h-full">
+                  <div class="row h-full">
+                    <div class="desktop-menu__menu-wrapper col-9 col-md-12 g-md-0 md:h-[60px] bg-white">
+                      <div class="border-b border-rose-ebony">
+                        <h2 class="text-rose-ebony lato py-[20px] text-[1.25rem] font-semibold md:hidden">Produtos</h2>
+                      </div>
+          
+                      <div class="menu-wrapper h-[320px] md:h-auto overflow-auto md:flex md:gap-x-2 md:justify-center">
+                        <div class="list md:w-1/5">
+                          <div class="relative list-wrapped">
+                            <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                              <a href="h#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Decoração</a>
+                              <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                            </span>
+            
+                            <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                              <li class="lato">Tapetes</li>
+                              <li class="lato">Funkos</li>
+                              <li class="lato">Quadros</li>
+                            </ul>
+                          </div>
+                        </div>
+          
+                        <div class="list md:w-1/5">
+                          <div class="relative list-wrapped">
+                            <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                              <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Mangás</a>
+                              <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                            </span>
+          
+                            <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                              <li class="lato">Naruto</li>
+                              <li class="lato">Jojo's bizarre adventure</li>
+                              <li class="lato">One Piece</li>
+                              <li class="lato">Hamtaro</li>
+                            </ul>
+                          </div>
+                        </div>
+          
+                        <div class="list md:w-1/5">
+                          <div class="relative list-wrapped">
+                            <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                              <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Gamer</a>
+                              <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                            </span>
+          
+                            <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                              <li class="lato">Overwatch</li>
+                              <li class="lato">Dead By Daylight</li>
+                              <li class="lato">Naruto Shippuden Ultimate Ninja Storm 4</li>
+                            </ul>
+                          </div>
+                        </div>
+          
+                        <div class="list md:w-1/5">
+                          <div class="relative list-wrapped">
+                            <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                              <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Vestuário</a>
+                              <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                            </span>
+          
+                            <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                              <li class="lato">Acessórios</li>
+                              <li class="lato">Camisetas</li>
+                              <li class="lato">Bermudas / Calças</li>
+                              <li class="lato">Roupas Íntimas</li>
+                              <li class="lato">Saias</li>
+                              <li class="lato">Tênis</li>
+                            </ul>
+                          </div>
+                        </div>
+          
+                        <div class="list md:w-1/5">
+                          <div class="relative list-wrapped">
+                            <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                              <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Presentes</a>
+                              <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                            </span>
+          
+                            <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                              <li class="lato">Kit blusas</li>
+                              <li class="lato">Kit mangas</li>
+                              <li class="lato">Kit Funkos</li>
+                              <li class="lato">Monte seu Kit</li>
+                            </ul>
+                          </div>
+                        </div>
+          
+                      </div>
+                      
+                    </div>
+                
+                    <div id="mobile-menu__close-btn" class="col-3 g-0 bg-[#0006] md:hidden">
+                      <div class="h-[72px] flex justify-center items-center bg-main-pink">
+                        <i class="fa-solid fa-x text-rose-ebony"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+          
+            </div>
+            <!-- Fim Menu -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mb-7">
+          <h2 class="lato my-5 text-[22px] text-heavy-pink">Carrinho <i class="fa-solid fa-cart-shopping"></i></h2>
+          
+          <div class="hidden lg:grid product-legend bg-main-pink-translucid py-2 font-bold g-0"> 
+            <span class="text-[22px]">Produto</span>
+            <span class="text-[22px]">Preço unitário</span>
+            <span class="text-[22px]">Quantidade</span>
+            <span class="text-[22px]">Subtotal</span>
+            <span class="text-[22px]">Excluir</span>
+          </div>
+
+          <div class="product-wrapper mt-[10px] lato">
+            <div class="lg:flex lg:items-center">
+              <div class="flex justify-center lg:justify-start">
+                <img src="../img/caneca_captao_marvel.png" class="w-[150px] lg:w-[100px] h-auto">
+              </div>
+            
+              <div>
+                <p class="font-bold text-[18px] text-[#444]">Caneca Capitã Marvel</p> 
+                <p>Estoque: Disponível</p>
+              </div>
+            </div>
+
+
+            <div class="order-2 product__qtd flex items-center justify-center lg:justify-start gap-x-4 mt-[16px] lg:mt-0">
+              <i id="product__qtd__btn-less" class="fa-solid fa-minus text-heavy-pink cursor-pointer font-bold text-[21px]"></i>
+              <div class="product__qtd__value rounded-[50px] w-[60px]">
+                <input id="product__qtd__values" type="number" name="qtd" value="1"
+                class="rounded-[50px] w-full text-center p-[5px]">
+              </div>
+              <i id="product__qtd__btn-plus" class="fa-solid fa-plus text-heavy-pink cursor-pointer font-bold"></i>
+            </div>
+
+            <div class="order-1 text-[22px] flex flex-col lg:flex-row items-center gap-y-5 mt-[20px] lg:mt-0">
+              <span class="">R$<span id="">59,90</span></span>
+              <i class="fa-solid fa-trash text-heavy-pink cursor-pointer lg:hidden"></i>
+            </div>
+
+            <div class="order-3 hidden lg:flex items-center text-[22px]">
+              <p>R$ <span id="product__subtotal">59.90</span></p>
+            </div>
+
+            <div class="order-4 hidden lg:flex items-center">
+              <i class="fa-solid fa-trash text-heavy-pink cursor-pointer text-[22px]"></i>
+            </div>
+          </div>          
+        </div>
+
+        <div class="col-12 px-2.5 py-8 lg:py-0 bg-main-pink-translucid lg:bg-white">
+          <div class="lg:bg-main-pink-translucid lg:py-8 lg:px-[12px]">
+            <span class="font-bold text-[14px]">Calcular o frete: </span>
+            <div class="ml-2 mt-2">
+              <input class="product-frete w-[156px] p-[5px] lato" type="number" name="cep" maxlength="9">
+              <button class="ml-2.5  py-[5px] px-[5px] product-frete__btn bg-main-pink-translucid">Calcular</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-[20px] lg:mt-0 py-8 lg:py-0 bg-main-pink-translucid lg:bg-white">
+          <div class="text-right lato text-[14px] lg:bg-main-pink-translucid lg:py-8 lg:px-[12px]">
+            <p>Total: <span class="text-[22px] font-bold text-heavy-pink">R$ <span id="product__total">59.90</span> </span></p>
+            <p>via Pix por <span class="font-bold text-heavy-pink">R$ <span id="product__pix">49.99</span> </span></p>
+            <p>ou em até <span class="font-semibold">2x</span> de <span class="font-semibold">R$ <span id="product__parcela"> 26.10</span></span> sem juros</p>
+          </div>
+        </div>
+
+        <div class="col-12 mt-6 lg:mt-[30px] mb-20">
+          <div class="flex flex-col lg:flex-row lg:justify-end  lg:gap-x-[10px] gap-y-[10px] items-center">
+            <button class="uppercase product-finish product-finish--light"><i class="fa-regular fa-less-than mr-[5px]"></i> Continuar comprando</button>
+            <button class="w-full max-w-[259px] text-[18px] uppercase product-finish product-finish--pink"><i class="fa-solid fa-check mr-[5px]"></i> Finalizar Compra</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

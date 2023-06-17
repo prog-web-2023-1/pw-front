@@ -1,5 +1,9 @@
 @import url("./sections/menu.css");
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #corpo #corpo-body {
     display: flex;
     justify-content: center;
@@ -32,6 +36,7 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
 #corpo .cardsBloco .divCardItens{
     margin: 1%; 
 }
@@ -42,20 +47,23 @@
     height: 490px;
 }
 
-#corpo .cardsBloco .cardItens > img {
-    border-radius: inherit;
+#corpo .cardsBloco .cardItens > a > img {
+    border-radius: 2%;
+    height: 300px;
 }
 
 #corpo .cardsBloco .cardItens .preco {
     position: absolute;
     bottom: 20px;
-    width: 90%;
+    right: 16px;
+    left: 16px;
 }
 
 #corpo .cardsBloco .cardItens .preco .btnCompra {
     border-color: #f74780 !important;
     color: #f74780;
     font-weight: bolder;
+    width: 100%;
 }
 
 #corpo .cardsBloco .cardItens .btnCompra:hover {
@@ -73,10 +81,24 @@
     #corpo .cardsBloco .cardItens {
         height: 350px;
     }
+
+    #corpo .cardsBloco .divCardItens{
+        width: 200px; 
+    }
+
+    #corpo .cardsBloco .cardItens > a > img {
+        border-radius: 3%;
+        height: 170px;
+    }
 }
 
 @media screen and (max-width: 992px) {
     #corpo .cardsBloco .cardItens {
         height: 350px;
+    }
+
+    #corpo .cardsBloco .cardItens > a > img {
+        border-radius: 3%;
+        height: 170px;
     }
 }

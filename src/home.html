@@ -1,16 +1,21 @@
-<!DOCTYPE> 
+<!DOCTYPE html> 
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <link rel="stylesheet" href="../css/home.css" />
         <link rel="stylesheet" href="../css/topo.css" />
         <script src="../js/functions.js"></script>
+        <link rel="stylesheet" href="../css/main.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/76276bc273.js" crossorigin="anonymous"></script>
+        <script src="../scripts/main.js" type="module"> </script>
         <title>PurrFect Play - Principal</title>
     </head>
-    <body>
+    <body class="has-menu">
       <div class="inicio">
         <!-- inicio topo -->
         <div class="col-md-12" id="topo">
@@ -29,27 +34,142 @@
                   </div>            
                 </div>
                 <div class="col-md-1 col-sm-auto" id="icon-user">
-                  <a href="" onclick="load()">
+                  <a href="login.html" onclick="load()">
                     <img src="../img/icon-user.png" alt="login" />
                   </a>
                 </div> 
                 <div class="col-md-1 col-sm-auto" id="icon-carrinho">
-                  <a href="" onclick="load()">
+                  <a href="cesta.html" onclick="load()">
                     <img src="../img/icon-carrinho.png" alt="carrinho" />
                   </a>
                 </div>
+
+                <div id="menu__btn" class="d-md-none cursor-pointer">
+									<i class="fa-solid fa-bars text-[30px]"></i>
+								</div>
               </div>
             </div>
           </div>
         </div>
         <!-- fim topo -->
+
+        <!--Início Menu -->
+        <div id="mobile-menu" class="z-10 mobile-menu container-fluid fixed md:relative h-full top-0">
+          <div class="row h-full">
+            <div class="col-12 h-full">
+              <div class="row h-full">
+                <div class="desktop-menu__menu-wrapper col-9 col-md-12 g-md-0 md:h-[60px] bg-white">
+                  <div class="border-b border-rose-ebony">
+                    <h2 class="text-rose-ebony lato py-[20px] text-[1.25rem] font-semibold md:hidden">Produtos</h2>
+                  </div>
+      
+                  <div class="menu-wrapper h-[320px] md:h-auto overflow-auto md:flex md:gap-x-2 md:justify-center">
+                    <div class="list md:w-1/5">
+                      <div class="relative list-wrapped">
+                        <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                          <a href="h#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Decoração</a>
+                          <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                        </span>
+        
+                        <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                          <li class="lato">Tapetes</li>
+                          <li class="lato">Funkos</li>
+                          <li class="lato">Quadros</li>
+                        </ul>
+                      </div>
+                    </div>
+      
+                    <div class="list md:w-1/5">
+                      <div class="relative list-wrapped">
+                        <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                          <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Mangás</a>
+                          <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                        </span>
+      
+                        <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                          <li class="lato">Naruto</li>
+                          <li class="lato">Jojo's bizarre adventure</li>
+                          <li class="lato">One Piece</li>
+                          <li class="lato">Hamtaro</li>
+                        </ul>
+                      </div>
+                    </div>
+      
+                    <div class="list md:w-1/5">
+                      <div class="relative list-wrapped">
+                        <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                          <a href="# target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Gamer</a>
+                          <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                        </span>
+      
+                        <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                          <li class="lato">Overwatch</li>
+                          <li class="lato">Dead By Daylight</li>
+                          <li class="lato">Naruto Shippuden Ultimate Ninja Storm 4</li>
+                        </ul>
+                      </div>
+                    </div>
+      
+                    <div class="list md:w-1/5">
+                      <div class="relative list-wrapped">
+                        <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                          <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Vestuário</a>
+                          <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                        </span>
+      
+                        <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                          <li class="lato">Acessórios</li>
+                          <li class="lato">Camisetas</li>
+                          <li class="lato">Bermudas / Calças</li>
+                          <li class="lato">Roupas Íntimas</li>
+                          <li class="lato">Saias</li>
+                          <li class="lato">Tênis</li>
+                        </ul>
+                      </div>
+                    </div>
+      
+                    <div class="list md:w-1/5">
+                      <div class="relative list-wrapped">
+                        <span class="mobile-menu__section-title my-2.5 md:my-5 flex justify-between md:justify-center items-center">
+                          <a href="#" target="_blank" class="text-[13px] md:text-[15px] font-semibold uppercase bebas mobile-menu__section-title__link">Presentes</a>
+                          <i class="md:hidden fa-solid fa-angle-down mobile-menu__section-title__icon"></i>
+                        </span>
+      
+                        <ul class="menu__section-dropdown max-h-0 overflow-hidden w-full bg-white z-10">
+                          <li class="lato">Kit blusas</li>
+                          <li class="lato">Kit mangas</li>
+                          <li class="lato">Kit Funkos</li>
+                          <li class="lato">Monte seu Kit</li>
+                        </ul>
+                      </div>
+                    </div>
+      
+                  </div>
+                  
+                </div>
+            
+                <div id="mobile-menu__close-btn" class="col-3 g-0 bg-[#0006] md:hidden">
+                  <div class="h-[72px] flex justify-center items-center bg-main-pink">
+                    <i class="fa-solid fa-x text-rose-ebony"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      
+        </div>
+        <!-- Fim Menu -->
+
+
+
         <!-- inicio corpo -->
         <div class="col-md-12" id="corpo">        
           <div class="container">
             <div class="row">          
               <div class="col-md-12">
                 <div class="nomeCate">
-                  <h1>Top Canecas</h1>
+                  <h1 class="text-[2.5rem]">Top Canecas</h1>
                 </div>
               </div>
             </div>
@@ -58,7 +178,7 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://img.elo7.com.br/product/zoom/2B9D217/caneca-geek-stuff-48-herois.jpg" alt="...">
+                      <img src="https://img.elo7.com.br/product/zoom/2B9D217/caneca-geek-stuff-48-herois.jpg" alt="Caneca Heróis DC">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Caneca Heróis DC</h5>
@@ -72,7 +192,7 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://img.elo7.com.br/product/zoom/2F7F8BA/caneca-geek-stuff-59.jpg" alt="...">
+                      <img src="https://img.elo7.com.br/product/zoom/2F7F8BA/caneca-geek-stuff-59.jpg" alt="Caneca Super Mario">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Caneca Super Mario</h5>
@@ -86,7 +206,7 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://img.elo7.com.br/product/zoom/2F7FAB3/caneca-star-wars.jpg" alt="...">
+                      <img src="https://img.elo7.com.br/product/zoom/2F7FAB3/caneca-star-wars.jpg" alt="Caneca Star Wars">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Caneca Star Wars</h5>
@@ -103,7 +223,7 @@
             <div class="row">          
               <div class="col-md-12">
                 <div class="nomeCate">
-                  <h1>Top Funkos</h1>
+                  <h1 class="text-[2.5rem]">Top Funkos</h1>
                 </div>
               </div>
             </div>
@@ -112,7 +232,7 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://i5.walmartimages.com/asr/d1c402dd-2979-4809-a712-bcd6ccd5f3b9_1.b1b93dff126b68f8793ec5fc68ed5261.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="...">
+                      <img src="https://i5.walmartimages.com/asr/d1c402dd-2979-4809-a712-bcd6ccd5f3b9_1.b1b93dff126b68f8793ec5fc68ed5261.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Funko Batman">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Funko Batman</h5>
@@ -125,13 +245,13 @@
                 </div>
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
-                    <a href="" onclick="load()">
-                      <img src="https://i5.walmartimages.com/asr/92f5b646-07c3-4ace-88b1-01473016052c_2.4c29df268785dfeaa77933b87ce536d1.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="...">
+                    <a href="detalheProdutoMM.html" onclick="load()">
+                      <img src="https://atacado.lojatoys4fun.com.br/media/catalog/product/cache/c6cb0d9eb407599e4eb00f17c03af209/m/u/mulher_maravilha_wonder_woman_classic_with_cape_.png" alt="Funko Mulher Maravilha">
                     </a>
                     <div class="card-body">
-                      <h5 class="card-title">Funko Pennywise</h5>
+                      <h5 class="card-title">Funko Mulher Maravilha</h5>
                       <div class="preco">
-                        <p class="card-text">Por <b>R$ 199,90</b></p>
+                        <p class="card-text">Por <b>R$ 149,90</b></p>
                         <a href="#" class="btn btn-outline-success btnCompra">Comprar</a>
                       </div>
                     </div>
@@ -140,10 +260,10 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://i5.walmartimages.com/asr/c89a9e17-1430-4fca-a5b3-446dcbb73362.31080801047090e6406c3ef3f698570c.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="...">
+                      <img src="https://i5.walmartimages.com/asr/92f5b646-07c3-4ace-88b1-01473016052c_2.4c29df268785dfeaa77933b87ce536d1.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Funko Pennywise">
                     </a>
                     <div class="card-body">
-                      <h5 class="card-title">Funko Ashe</h5>
+                      <h5 class="card-title">Funko Pennywise</h5>
                       <div class="preco">
                         <p class="card-text">Por <b>R$ 199,90</b></p>
                         <a href="#" class="btn btn-outline-success btnCompra">Comprar</a>
@@ -157,7 +277,7 @@
             <div class="row">          
               <div class="col-md-12">
                 <div class="nomeCate">
-                  <h1>Top Chaveiros</h1>
+                  <h1 class="text-[2.5rem]">Top Chaveiros</h1>
                 </div>
               </div>
             </div>
@@ -166,7 +286,7 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://geekvip.com.br/wp-content/uploads/2020/12/chaveiro-cute-super-man.jpg" alt="...">
+                      <img src="https://geekvip.com.br/wp-content/uploads/2020/12/chaveiro-cute-super-man.jpg" alt="Chaveiro Superman">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Chaveiro Superman</h5>
@@ -179,8 +299,8 @@
                 </div>
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
-                    <a href="" onclick="load()">
-                      <img src="https://geekvip.com.br/wp-content/uploads/2020/12/chaveiro-baby-yoda-pod-600x600.jpg" alt="...">
+                    <a href="detalheProdutoBY.html" onclick="load()">
+                      <img src="https://geekvip.com.br/wp-content/uploads/2020/12/chaveiro-baby-yoda-pod-600x600.jpg" alt="Chaveiro Yoda">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Chaveiro Yoda</h5>
@@ -194,7 +314,7 @@
                 <div class="col-md-3 divCardItens">
                   <div class="card cardItens">
                     <a href="" onclick="load()">
-                      <img src="https://geekvip.com.br/wp-content/uploads/2021/01/Chaveiro-Divertida-Geek-Cute-Naruto-Presente-Criativo-600x600.jpg" alt="...">
+                      <img src="https://geekvip.com.br/wp-content/uploads/2021/01/Chaveiro-Divertida-Geek-Cute-Naruto-Presente-Criativo-600x600.jpg" alt="Chaveiro Naruto">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Chaveiro Naruto</h5>
